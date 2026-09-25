@@ -1,0 +1,144 @@
+#footer {
+  grid-column: 1 / 13;
+  width: 100%;
+  height: 60;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer {
+  width: 100%;
+  min-height: 300px;
+  box-sizing: border-box;
+  /* padding: 50px 60px; */
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+#footer .footer aside {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#footer .footer nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#footer .footer .footer-title {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#footer .footer a {
+  text-decoration: none;
+}
+
+#footer .footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+#footer .footer .grid {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+#footer .footer .grid a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .footer svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Mobile devices (phones and small tablets) */
+@media (max-width: 768px) {
+  #footer .footer {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 30px 20px;
+  }
+
+  #footer .footer aside {
+    grid-column: auto;
+  }
+
+  #footer .footer nav {
+    width: 100%;
+  }
+
+  #footer .footer .footer-title {
+    font-size: 15px;
+  }
+
+  #footer .footer p {
+    font-size: 13px;
+  }
+
+  #footer .footer svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Tablet devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #footer .footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    padding: 40px 30px;
+  }
+
+  #footer .footer aside {
+    grid-column: 1 / -1;
+  }
+
+  #footer .footer .footer-title {
+    font-size: 16px;
+  }
+
+  #footer .footer p {
+    font-size: 14px;
+  }
+
+  #footer .footer svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Desktop devices */
+@media (min-width: 1025px) {
+  #footer .footer {
+    grid-template-columns: 2fr repeat(4, 1fr);
+    gap: 40px;
+    padding: 50px 60px;
+  }
+
+  #footer .footer aside {
+    grid-column: auto;
+  }
+
+  #footer .footer .footer-title {
+    font-size: 16px;
+  }
+
+  #footer .footer p {
+    font-size: 14px;
+  }
+
+  #footer .footer svg {
+    width: 24px;
+    height: 24px;
+  }
+}
